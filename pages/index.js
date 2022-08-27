@@ -22,7 +22,7 @@ export default function Home(props) {
     useEffect(() => {
         setValid(false);
         if (key.length < 40) {
-            setOut('Filler Text (Key) too small, please add more to the message');
+            setOut('Filler Text (Key) too small, please add more to the Filler Text');
         } else if (message.length == 0) {
             setOut('Message Text (Message) too small, please add more to the message')
         } else {
@@ -95,6 +95,7 @@ export default function Home(props) {
                     placeholder="some random filler text, about a paragraph in size"
                     onInput={onEditKey}
                 />
+                <p>{out}</p>
                 {valid && (
                     <>
                         <button
