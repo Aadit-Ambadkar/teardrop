@@ -3,6 +3,7 @@ import { useEffect, useState, } from 'react'
 import toast from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
 import { decrypt, emojiToText, extractEmoji } from './api/aes';
+import Head from "next/head";
 
 
 export default function Home(props) {

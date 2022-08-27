@@ -4,6 +4,7 @@ import { fetch_db } from '../fb/Firebase'
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
+import Head from "next/head";
 
 export default function Home(props) {
     const { session, messages } = props;
